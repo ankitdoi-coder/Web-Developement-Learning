@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compute Product</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+</head>
+<body>
+
+<div id="app">
+  <h1>Compute Product</h1>
+
+  <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="Airplane Image" style="width:300px; height:auto;" />
+
+  <p>Number 1: {{ number1 }}</p>
+  <p>Number 2: {{ number2 }}</p>
+
+  <div v-if="showButton">
+    <button @click="computeProduct">Compute</button>
+  </div>
+
+  <div v-else>
+    <p>Product: {{ product }}</p>
+  </div>
+</div>
+
+<script>
+const app = Vue.createApp({
+  data() {
+    return {
+      number1: 5,
+      number2: 10,
+      product: null,
+      showButton: true
+    }
+  },
+  methods: {
+    computeProduct() {
+      this.product = this.number1 * this.number2;
+      this.showButton = false;
+    }
+  }
+});
+app.mount('#app');
+</script>
+
+</body>
+</html>

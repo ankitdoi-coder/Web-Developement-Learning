@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            box-shadow: 4px 4px 8px gray;
+            outline: 2px dotted green;
+            outline-offset: 4px;
+        }
+        .p1{
+            text-shadow: 2px 2px 3px gray;
+        }
+        .button{
+            box-shadow: 2px 2px 5px gray;
+            outline: 2px solid black;
+        }
+        .p2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration:aqua;
+        }
+        .box{
+            outline: 2px solid brown;
+            
+        }
+        .box1{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #4400ff, 0 0 10px #2600ff, 0 0 15px #0e8aff, 0 0 20px #0e8aff, 0 0 25px #0e8aff, 0 0 30px #0e8aff, 0 0 35px #0e8aff, 0 0 10px #0e8aff, 0 0 15px #0e8aff, 0 0 20px #0e8aff, 0 0 25px #0454ff, 0 0 30px #0041f5, 0 0 35px #3c12d4;
+        }
+        .box2{
+            box-shadow: 5px 3px 10px gray;
+            margin-top: 2rem;
+            box-shadow: 60px 30px 10px gray;
+            box-shadow: 60px 30px 10px gray;
+            box-shadow: 60px 30px 10px gray;
+            box-shadow: 60px 30px 10px gray;
+            box-shadow: 60px 30px 10px gray;
+            color: aqua;
+            background-color: black;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .box3{
+            outline: 3px solid blue;
+            margin-top: 5rem;
+            text-align: center;
+        }
+        .box4{
+            color: tomato;
+            text-align: center;
+        }
+        .box5 {
+        margin-top: 3rem;
+        background-color: black;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        color: yellow;
+        transition: text-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+        transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+    }
+
+    .box5:hover {
+        
+        text-shadow: 2px 2px 5px red, -2px -2px 5px blue; /* New shadow effect on hover */
+        box-shadow: 5px 5px 10px gray,-5px -5px 10px yellow /* Optional: Add a shadow effect on hover */
+        
+    }
+    .box6 {
+        margin-top: 3rem;
+        background-color: black;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        color: yellow;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Transparent shadow */
+    }
+    </style>
+<body>
+    <div class="div">I am Div</div>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam consequuntur nihil nobis eaque quo eum facere dignissimos unde excepturi? Necessitatibus obcaecati doloribus eum.
+
+    </p>
+
+    <div>
+        <button class="button">Click Here</button>
+    </div>
+    <div class="box">
+        <h1 style="text-align: center; color: blue; background-color: skyblue; outline: 2px solid gray;">Conatiner Card</h1>
+
+        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias ratione voluptas voluptatum iste omnis?</p>
+    </div>
+
+    <div class="box1">
+        I am Neon Effect
+    </div>
+
+    <div class="box2">I am 3d Effect</div>
+
+    <div>
+        <button class="box3">with Outline</button>
+        <button class="box4">without Outline</button>
+        </div>
+
+        <div class="box5">Hover Effect</div>
+
+        <div class="box6">Transparent shadow</div>
+</body>
+</html>

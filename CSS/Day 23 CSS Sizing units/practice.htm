@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units Practice</title>
+  <style>
+    html {
+      font-size: 16px; /* 1rem = 16px */
+    }
+
+    .fixed-box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+    }
+
+    .parent {
+      font-size: 20px;
+    }
+
+    .parent p {
+      font-size: 2em; /* = 40px */
+    }
+
+    .box {
+      width: 60%;
+      background-color: lightgreen;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-color: lightcoral;
+    }
+
+    h1 {
+      font-size: 2rem; /* = 32px */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>This is heading with 2rem (32px)</h1>
+
+  <div class="fixed-box">I am 200px wide and 100px tall</div>
+
+  <div class="parent">
+    <p>This paragraph is 2em = 40px</p>
+  </div>
+
+  <div class="box">I am 60% of the parent width</div>
+
+  <section class="container">
+    I take full screen using 100vh & 100vw
+  </section>
+
+</body>
+</html>

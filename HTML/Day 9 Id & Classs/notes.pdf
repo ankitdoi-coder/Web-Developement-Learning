@@ -1,0 +1,11 @@
+Id
+agar ek element ko id dedi to dusre ko nhi denge 
+is a Unique Identifier assigned to only  one HTML element within a page .
+it is often used for unique styling and javascript manipulation.
+____________________________________________________________________
+Class
+class ka matlab hota hai ek tarah ki property multiple elements ko dena chahte hoto to usko multiple class dedenge.
+red namm ki class ap div and a form dono ko de sakte hai.
+bg naam ki class eke article tag ko bhi de sakte hai and header ko bhi de sakte hai.
+____________________________________________________________________
+id and classes elements ke attributes hote hai

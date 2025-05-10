@@ -1,0 +1,58 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #bbb;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 2em;
+    margin: 20px 0 10px 0;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #2ecc71;
+}
+
+/* Body Container */
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
