@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS OverFlow</title>
+    <style>
+        .heading{
+            text-align: center;
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            overflow: auto;
+        }
+        .heading1{
+            text-align: center;
+        }
+        .box1{
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="heading">I am the visible content Box</h2>
+        <p class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis asperiores excepturi quis, odit ad error mollitia doloribus, nobis voluptates cupiditate voluptatibus laboriosam architecto.</p>
+    </div>
+
+    <div>
+        <h2 class="heading1">I am the Horizental x/y content Box</h2>
+        <p class="box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis asperiores excepturi quis, odit ad error mollitia doloribus, nobis voluptates cupiditate voluptatibus laboriosam architecto.</p>
+    </div>
+</body>
+</html>
