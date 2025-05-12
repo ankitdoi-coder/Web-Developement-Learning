@@ -29,9 +29,7 @@ bash
 Copy
 Edit
 
-## 📸 Screenshots
 
-_Add screenshots of your styled lists if available._
 
 ## 📦 How to Use
 
