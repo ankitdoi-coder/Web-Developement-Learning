@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Property Examples</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 2000px;
+        }
+
+
+        /* 1. Static Box (Default) */
+        .static-box {
+            background: lightgray;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #000;
+            position: static;
+        }
+
+        /* 2. Relative Box */
+        .relative-box {
+            background: orange;
+            padding: 20px;
+            margin: 20px;
+            position: relative;
+            top: 30px;
+            left: 40px;
+        }
+
+        /* 3. Absolute Centered inside Relative Container */
+        .relative-container {
+            position: relative;
+            background: #f0f0f0;
+            height: 200px;
+            margin: 20px;
+        }
+
+        .absolute-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: red;
+            padding: 10px;
+            color: white;
+        }
+
+        /* 4. Fixed Button */
+        .fixed-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* 5. Sticky Header */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            background: navy;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        /* 6. Image with Absolute Overlay */
+        .image-container {
+            position: relative;
+            width: 300px;
+            margin: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 7. Floating Chat Icon */
+        .chat-icon {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background: #007bff;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        /* 8. Multiple Boxes with Different Positioning */
+        .box-wrapper {
+            margin: 20px;
+            position: relative;
+            height: 200px;
+            background: #eee;
+        }
+
+        .box-static {
+            background: lightblue;
+            padding: 10px;
+            position: static;
+        }
+
+        .box-relative {
+            background: lightgreen;
+            padding: 10px;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        .box-absolute {
+            background: salmon;
+            padding: 10px;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+
+        /* 9. z-index example */
+        .z-box1 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            background: purple;
+            z-index: 1;
+        }
+
+        .z-box2 {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            width: 100px;
+            height: 100px;
+            background: gold;
+            z-index: 2;
+        }
+
+        /* 10. Sticky Navbar after scroll */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: black;
+            color: white;
+            padding: 10px;
+            z-index: 5;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body> <!-- Sticky Navbar -->
+    <div class="navbar">Sticky Navbar - Scroll Down</div> <!-- Static -->
+    <div class="static-box">Static Position (Default)</div> <!-- Relative -->
+    <div class="relative-box">Relative Position (Moved 30px down, 40px right)</div> <!-- Absolute inside relative -->
+    <div class="relative-container">
+        <div class="absolute-center">Absolute Centered</div>
+    </div> <!-- Fixed Button -->
+    <button class="fixed-button">Fixed Button</button>
+
+    <!-- Sticky Header -->
+    <div class="sticky-header">Sticky Header</div> <!-- Image with overlay -->
+    <div class="image-container"> <img src="https://via.placeholder.com/300x200" alt="Sample" />
+        <div class="image-overlay">Overlay Text</div>
+    </div> <!-- Floating Chat Icon -->
+    <div class="chat-icon">💬</div> <!-- Multiple Positioned Boxes -->
+    <div class="box-wrapper">
+        <div class="box-static">Static</div>
+        <div class="box-relative">Relative</div>
+        <div class="box-absolute">Absolute</div>
+    </div> <!-- z-index Example -->
+    <div class="z-box1"></div>
+    <div class="z-box2"></div> <!-- Extra Content to Show Scroll -->
+    <div class="content">
+        <p>Scroll down to test sticky header and fixed button.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+    </div>
+</body>
+
+</html>
