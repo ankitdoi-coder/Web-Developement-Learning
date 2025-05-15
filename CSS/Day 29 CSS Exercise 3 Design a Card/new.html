@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Card UI - Lago di Braies</title>
+  <style>
+    body {
+      background-color: #eaf1f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background-color: white;
+      width: 320px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .tags {
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #f0f4f8;
+      color: #4b6584;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-right: 6px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #1e272e;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #7a7a7a;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .read-more {
+      background-color: #d0e8ff;
+      color: #0066cc;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .read-more:hover {
+      background-color: #b5dbff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="1713421064651.png" alt="Lago di Braies">
+    <div class="card-content">
+      <div class="tags">
+        <span class="tag">Nature</span>
+        <span class="tag">Lake</span>
+      </div>
+      <h2 class="card-title">Lago di Braies</h2>
+      <p class="card-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.
+      </p>
+      <button class="read-more">Read More</button>
+    </div>
+  </div>
+
+</body>
+</html>
