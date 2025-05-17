@@ -1,0 +1,76 @@
+/* Global Variables */
+:root {
+  --color-primary: #3498db;
+  --color-secondary: #2ecc71;
+  --color-accent: #f1c40f;
+  --color-danger: #e74c3c;
+  --color-dark: #2c3e50;
+  --color-light: #ecf0f1;
+  --color-white: #ffffff;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-dark);
+  padding: 1rem 2rem;
+  color: var(--color-white);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-light);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+/* Sections */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-home {
+  background-color: var(--color-primary);
+}
+
+.section-services {
+  background-color: var(--color-secondary);
+}
+
+.section-about {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.section-contact {
+  background-color: var(--color-danger);
+}
