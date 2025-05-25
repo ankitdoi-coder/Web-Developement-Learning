@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sigma Web Layout</title>
+  <style>
+    /* Reset and Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: pink;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    li{
+      display: inline;
+      list-style: none;
+    }
+
+    /* Box Container */
+    .box-container {
+      background-color: green;
+      padding: 40px 0;
+    }
+
+    .box {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 0 20px;
+      border-radius: 20px;
+    }
+
+    .pink-box {
+      background-color: pink;
+    }
+
+    .blue-box {
+      background-color: dodgerblue;
+    }
+
+    /* Contact Section */
+    .contact-box {
+      margin: 40px auto;
+      padding: 20px;
+      width: 80%;
+      background-color: #111;
+      border: 2px solid white;
+      border-radius: 20px;
+      font-size: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: lavender;
+      color: black;
+      padding: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+            <ul>
+                <li ><a href="#home">Home</a></li>
+                <li ><a href="#services">Services</a></li>
+                <li ><a href="#about">About</a></li>
+                <li ><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+  <!-- Two Boxes -->
+  <div class="box-container">
+    <div class="box pink-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magni ratione reprehenderit deleniti repudiandae, assumenda, fugiat accusantium ducimus quod quam accusamus, asperiores est.</div>
+    <div class="box blue-box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt incidunt eaque voluptatem sed totam est perspiciatis dolores minima a, debitis commodi. Doloremque, natus.</div>
+  </div>
+
+  <!-- Contact Message -->
+  <div class="contact-box">
+    Welcome to this Sigma Web Development Express
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 Sigma Web — All rights reserved
+  </div>
+
+</body>
+</html>
