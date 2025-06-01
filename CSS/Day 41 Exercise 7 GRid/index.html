@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UltraEdit Grid Layout</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .top-section {
+      margin-bottom: 30px;
+    }
+
+    .top-section h1 {
+      color: yellow;
+      font-size: 2rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .product-logo {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .platform-icons {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 0.95rem;
+      color: #bbb;
+      margin-bottom: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .download-btn {
+      background-color: #00cfff;
+      color: black;
+    }
+
+    .buy-btn {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+    }
+
+    .buy-btn:hover,
+    .download-btn:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-section">
+    <h1>⚡ UltraEdit <span style="color:white;">All Access</span></h1>
+    <p>UltraEdit <span style="color:gold;">plus</span> every app we publish, for all platforms</p>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-logo">🟡 UE</div>
+      <div class="product-title">UltraEdit</div>
+      <div class="platform-icons">Windows, Mac, Linux</div>
+      <div class="product-description">The world's #1 text editor</div>
+      <div class="buttons">
+        <button class="download-btn">Download</button>
+        <button class="buy-btn">Buy now</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-logo">🔵 UC</div>
+      <div class="product-title">UltraCompare</div>
+      <div class="platform-icons">Windows, Mac, Linux</div>
+      <div class="product-description">Text, file, folder compare</div>
+      <div class="buttons">
+        <button class="download-btn">Download</button>
+        <button class="buy-btn">Buy now</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-logo">🟡 UES</div>
+      <div class="product-title">UEStudio</div>
+      <div class="platform-icons">Windows</div>
+      <div class="product-description">The ultimate Git toolset</div>
+      <div class="buttons">
+        <button class="download-btn"><a href="images.jpg">Download</a></button>
+        <button class="buy-btn">Buy now</button>
+      </div>
+    </div>
+
+    <!-- Add more product cards below in the same structure -->
+
+  </div>
+
+</body>
+</html>
